@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance handoff regression</title>
+    <style>
+      #diagnostics { position: fixed; bottom: 12px; left: 12px; z-index: 10000; max-width: calc(100vw - 24px); padding: 14px; background: #111; color: #fff; font: 13px/1.5 monospace; }
+      #diagnostics button { padding: 6px 14px; background: #fff; color: #111; }
+      #diagnostics button:disabled { opacity: .5; }
+      #diagnostics pre { margin: 8px 0 0; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <aside id="diagnostics" aria-label="Entrance regression diagnostics">
+      <button id="start" type="button" disabled>Start</button>
+      <pre id="result" role="status">Waiting for initial reveal…</pre>
+    </aside>
+    <script type="module" src="/tests/entrance-handoff.tsx"></script>
+  </body>
+</html>

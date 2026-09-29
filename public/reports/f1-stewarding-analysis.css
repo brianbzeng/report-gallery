@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "DM Sans Variable";
+  src: url("../fonts/dm-sans-latin-variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("../fonts/instrument-serif-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --report-paper: #edeae4;
+  --report-ink: #28282a;
+  --jp-layout-color0: var(--report-paper);
+  --jp-content-font-family: "Instrument Serif", Georgia, serif;
+  --jp-content-heading-font-family: "DM Sans Variable", Helvetica, sans-serif;
+  --jp-content-font-size1: 19px;
+  --jp-content-line-height: 1.55;
+  --jp-content-font-color1: var(--report-ink);
+  --jp-content-heading-color: var(--report-ink);
+  --jp-content-link-color: var(--report-ink);
+  --jp-notebook-padding: 0;
+  --jp-cell-padding: 0;
+  --jp-cell-prompt-width: 0;
+}
+
+html,
+body.jp-Notebook {
+  margin: 0 !important;
+  color: var(--report-ink) !important;
+  background: var(--report-paper) !important;
+  font-family: "Instrument Serif", Georgia, serif !important;
+  overflow: visible !important;
+}
+
+body.jp-Notebook {
+  padding: 0 !important;
+}
+
+.jp-Notebook,
+.jp-Notebook[data-jp-theme-light="true"] {
+  padding: 0 !important;
+  overflow: visible !important;
+  background: var(--report-paper) !important;
+}
+
+.jp-Notebook > main {
+  box-sizing: border-box;
+  width: min(100%, 1680px);
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 132px) clamp(20px, 5.25vw, 88px) clamp(80px, 12vw, 180px);
+}
+
+.jp-Notebook .jp-Cell {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 auto clamp(30px, 4vw, 58px) !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+.jp-Notebook .jp-CodeCell.jp-mod-noInput.jp-mod-noOutputs {
+  display: none !important;
+}
+
+.jp-Cell-inputWrapper,
+.jp-Cell-outputWrapper,
+.jp-OutputArea,
+.jp-OutputArea-child,
+.jp-OutputArea-output {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+.jp-Cell-inputWrapper:empty,
+.jp-Cell-inputArea:empty,
+.jp-OutputPrompt:empty {
+  display: none !important;
+}
+
+.jp-RenderedHTMLCommon {
+  padding: 0 !important;
+  color: var(--report-ink) !important;
+  font-family: "Instrument Serif", Georgia, serif !important;
+  font-size: clamp(17px, 1.25vw, 20px) !important;
+  line-height: 1.55 !important;
+}
+
+.jp-RenderedHTMLCommon h1,
+.jp-RenderedHTMLCommon h2,
+.jp-RenderedHTMLCommon h3,
+.jp-RenderedHTMLCommon h4,
+.jp-RenderedHTMLCommon h5,
+.jp-RenderedHTMLCommon h6 {
+  color: var(--report-ink) !important;
+  font-family: "DM Sans Variable", Helvetica, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.045em !important;
+  line-height: 1.02 !important;
+  text-transform: none;
+}
+
+.jp-RenderedHTMLCommon h1 {
+  width: 100%;
+  max-width: 100% !important;
+  overflow: visible !important;
+  margin: 0 0 28px !important;
+  font-size: clamp(44px, 7.6vw, 124px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.075em !important;
+  line-height: 0.88 !important;
+}
+
+.jp-RenderedHTMLCommon h2 {
+  margin: clamp(60px, 8vw, 120px) 0 24px !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--report-ink) 22%, transparent);
+  font-size: clamp(32px, 5vw, 72px) !important;
+}
+
+.jp-RenderedHTMLCommon h3 {
+  margin: 52px 0 18px !important;
+  font-size: clamp(24px, 3.2vw, 44px) !important;
+}
+
+.jp-RenderedHTMLCommon h4 {
+  margin: 36px 0 14px !important;
+  font-size: clamp(20px, 2.2vw, 30px) !important;
+}
+
+.jp-RenderedHTMLCommon p,
+.jp-RenderedHTMLCommon ul,
+.jp-RenderedHTMLCommon ol,
+.jp-RenderedHTMLCommon blockquote {
+  max-width: 1000px;
+}
+
+.jp-RenderedHTMLCommon p {
+  margin: 0 0 1.2em !important;
+}
+
+.jp-RenderedHTMLCommon a {
+  color: var(--report-ink) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.jp-RenderedHTMLCommon a:hover {
+  opacity: 0.62;
+}
+
+.jp-RenderedHTMLCommon .anchor-link {
+  display: none;
+}
+
+.jp-RenderedHTMLCommon .report-author {
+  margin: 0 0 54px;
+  color: var(--report-ink);
+  font-family: "DM Sans Variable", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.jp-RenderedHTMLCommon .report-author strong {
+  color: var(--report-ink);
+  font-size: 16px;
+}
+
+.jp-RenderedHTMLCommon .report-author a,
+.jp-RenderedHTMLCommon details > summary {
+  color: var(--report-ink) !important;
+}
+
+.jp-RenderedHTMLCommon .toc {
+  background: var(--report-paper) !important;
+  border-top: 0 !important;
+}
+
+.jp-RenderedHTMLCommon .stat-grid {
+  max-width: 1080px;
+}
+
+.jp-RenderedHTMLCommon .stat-item {
+  border-top: 1px solid var(--report-ink);
+  background: transparent;
+}
+
+.jp-RenderedHTMLCommon .stat-value,
+.jp-RenderedHTMLCommon .stat-label {
+  color: var(--report-ink);
+}
+
+.jp-RenderedHTMLCommon .report-answer,
+.jp-RenderedHTMLCommon .report-note,
+.jp-RenderedHTMLCommon .report-method {
+  border-left: 2px solid var(--report-ink);
+  color: var(--report-ink);
+  background: color-mix(in srgb, var(--report-ink) 5%, var(--report-paper));
+}
+
+.jp-RenderedHTMLCommon .figure-caption {
+  color: color-mix(in srgb, var(--report-ink) 72%, var(--report-paper));
+  font-size: 15px;
+}
+
+.jp-RenderedHTMLCommon img {
+  display: block;
+  max-width: min(100%, 1100px) !important;
+  height: auto !important;
+  margin: 34px auto !important;
+}
+
+.jp-RenderedHTMLCommon .table-scroll {
+  max-width: 100%;
+  overflow-x: auto !important;
+}
+
+.jp-RenderedHTMLCommon table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86em;
+}
+
+.jp-RenderedHTMLCommon th,
+.jp-RenderedHTMLCommon td {
+  padding: 12px 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--report-ink) 18%, transparent);
+  text-align: left;
+  vertical-align: top;
+}
+
+.jp-RenderedHTMLCommon th {
+  font-family: "DM Sans Variable", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.jp-RenderedHTMLCommon pre,
+.jp-RenderedHTMLCommon code {
+  max-width: 100%;
+  overflow-x: auto;
+  color: var(--report-ink);
+  background: color-mix(in srgb, var(--report-ink) 6%, var(--report-paper));
+}
+
+@media (max-width: 700px) {
+  .jp-Notebook > main {
+    padding: 52px 18px 80px;
+  }
+
+  .jp-RenderedHTMLCommon {
+    font-size: 16px !important;
+  }
+
+  .jp-RenderedHTMLCommon .toc {
+    columns: 1;
+    padding: 18px 0;
+  }
+
+  .jp-RenderedHTMLCommon th,
+  .jp-RenderedHTMLCommon td {
+    padding: 9px 7px;
+  }
+}
