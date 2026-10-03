@@ -12,11 +12,18 @@
   font-weight: 400;
   font-display: swap;
 }
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/newsreader-latin-variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
 :root {
   --report-paper: #edeae4;
   --report-ink: #28282a;
   --jp-layout-color0: var(--report-paper);
-  --jp-content-font-family: "Instrument Serif", Georgia, serif;
+  --jp-content-font-family: "Newsreader", Georgia, serif;
   --jp-content-heading-font-family: "DM Sans Variable", Helvetica, sans-serif;
   --jp-content-font-size1: 19px;
   --jp-content-line-height: 1.55;
@@ -33,7 +40,7 @@ body.jp-Notebook {
   margin: 0 !important;
   color: var(--report-ink) !important;
   background: var(--report-paper) !important;
-  font-family: "Instrument Serif", Georgia, serif !important;
+  font-family: "Newsreader", Georgia, serif !important;
   overflow: visible !important;
 }
 
@@ -57,6 +64,7 @@ body.jp-Notebook {
 
 .jp-Notebook .jp-Cell {
   width: 100%;
+  max-width: 1280px;
   padding: 0 !important;
   margin: 0 auto clamp(30px, 4vw, 58px) !important;
   overflow: visible !important;
@@ -87,7 +95,7 @@ body.jp-Notebook {
 .jp-RenderedHTMLCommon {
   padding: 0 !important;
   color: var(--report-ink) !important;
-  font-family: "Instrument Serif", Georgia, serif !important;
+  font-family: "Newsreader", Georgia, serif !important;
   font-size: clamp(17px, 1.25vw, 20px) !important;
   line-height: 1.55 !important;
 }
