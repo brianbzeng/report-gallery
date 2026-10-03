@@ -57,14 +57,14 @@ body.jp-Notebook {
 
 .jp-Notebook > main {
   box-sizing: border-box;
-  width: min(100%, 1680px);
+  width: min(100%, 1200px);
   margin: 0 auto;
-  padding: clamp(48px, 8vw, 132px) clamp(20px, 5.25vw, 88px) clamp(80px, 12vw, 180px);
+  padding: clamp(48px, 8vw, 132px) clamp(20px, 3vw, 40px) clamp(80px, 12vw, 180px);
 }
 
 .jp-Notebook .jp-Cell {
   width: 100%;
-  max-width: 1280px;
+  max-width: none;
   padding: 0 !important;
   margin: 0 auto clamp(30px, 4vw, 58px) !important;
   overflow: visible !important;
